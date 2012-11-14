@@ -4,6 +4,18 @@
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="aokp"
+           fetch="https://github.com/AOKP/"
+           review="gerrit.aokp.co" />
+
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod/"
+           review="review.cyanogenmod.com" />
+
+  <remote  name="roberj13"
+           fetch="https://github.com/roberj13/" />
+
   <default revision="refs/tags/android-4.2_r1"
            remote="aosp"
            sync-j="4" />
@@ -31,8 +43,12 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/sample" name="device/sample" />
+  <project path="device/samsung/d2-common" name="android_device_samsung_d2-common" remote="aokp" revision="jb" />
+  <project path="device/samsung/d2vzw" name="device_samsung_d2vzw" remote="aokp" revision="jb" />
   <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device" />
+  <project path="device/samsung/msm8960-common" name="android_device_samsung_msm8960-common" remote="aokp" revision="jb" />
+  <project path="device/samsung/qcom-common" name="device_samsung_qcom-common" remote="aokp" revision="jb" />
   <project path="device/samsung/toro" name="device/samsung/toro" groups="device" />
   <project path="device/samsung/toroplus" name="device/samsung/toroplus" groups="device" />
   <project path="device/samsung/tuna" name="device/samsung/tuna" groups="device" />
@@ -224,6 +240,10 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="jellybean" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cm" revision="jellybean" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="jellybean" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cm" revision="jellybean" />
   <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
@@ -328,4 +348,12 @@
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
 
+  <project path="vendor/aokp" name="vendor_aokp" remote="aokp" revision="jb" />
+  <project path="vendor/aokp/bot" name="pseudo_buildbot" remote="aokp" revision="jb" />
+  <project path="vendor/samsung" name="vendor_samsung" remote="aokp" revision="jb" />
+  <project path="vendor/asus" name="vendor_asus" remote="aokp" revision="jb" />
+
+  <project path="packages/wallpapers/SwagPapers" name="AOKP/packages_wallpapers_SwagPapers_v2" remote="aokp" revision="jb" />
+
+  <project path="platform_manifest" name="roberj13/platform_manifest" remote="roberj13" revision="4.2jb" />
 </manifest>
