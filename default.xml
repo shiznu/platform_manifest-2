@@ -353,7 +353,7 @@
   <project path="vendor/samsung" name="vendor_samsung" remote="aokp" revision="jb" />
   <project path="vendor/asus" name="vendor_asus" remote="aokp" revision="jb" />
 
-  <project path="packages/wallpapers/SwagPapers" name="AOKP/packages_wallpapers_SwagPapers_v2" remote="aokp" revision="jb" />
+  <project path="packages/wallpapers/SwagPapers" name="packages_wallpapers_SwagPapers_v2" remote="aokp" revision="jb" />
 
   <project path="platform_manifest" name="platform_manifest" remote="roberj13" revision="4.2jb" />
 </manifest>
