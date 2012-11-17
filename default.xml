@@ -66,6 +66,7 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
+  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="jellybean" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
   <project path="external/chromium" name="platform/external/chromium" />
@@ -279,6 +280,7 @@
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
+  <project path="packages/apps/Torch" name="packages_apps_Torch" remote="aokp" revision="jb" />
   <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
@@ -332,7 +334,8 @@
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" name="system_core" remote="roberj13" revision="jb-mr1" />
-  <project path="system/extras" name="platform/system/extras" />
+  <project path="system/extras" name="system_extras" remote="roberj13" revision="jb-mr1" />
+  <project path="system/su" name="android_system_su" remote="cm" revision="jellybean" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" />
