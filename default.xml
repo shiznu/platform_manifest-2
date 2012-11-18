@@ -24,14 +24,14 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="platform/bionic" />
+  <project path="bionic" name="bionic" remote="bcf" revision="jb-mr1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="platform/dalvik" />
   <project path="development" name="platform/development" />
-  <project path="device/asus/grouper" name="device/asus/grouper" groups="device" />
+  <project path="device/asus/grouper" name="device_asus_grouper" remote="bcf" revision="jb-mr1" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" />
@@ -43,7 +43,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device" />
+  <project path="device/samsung/maguro" name="device_samsung_maguro" remote="bcf" revision="jb-mr1" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device" />
   <project path="device/samsung/toro" name="device_samsung_toro" remote="bcf" revision="jb-mr1" />
   <project path="device/samsung/toroplus" name="device/samsung/toroplus" groups="device" />
@@ -346,7 +346,7 @@
   <project path="vendor/aokp" name="vendor_aokp" remote="bcf" revision="jb-mr1" />
   <project path="vendor/aokp/bot" name="pseudo_buildbot" remote="aokp" revision="jb" />
   <project path="vendor/samsung" name="vendor_samsung" remote="bcf" revision="jb-mr1" />
-  <project path="vendor/asus" name="vendor_asus" remote="aokp" revision="jb" />
+  <project path="vendor/asus" name="vendor_asus" remote="bcf" revision="jb-mr1" />
 
   <project path="packages/wallpapers/SwagPapers" name="packages_wallpapers_SwagPapers_v2" remote="aokp" revision="jb" />
 
