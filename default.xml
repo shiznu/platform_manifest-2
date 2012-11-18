@@ -13,14 +13,14 @@
            fetch="https://github.com/CyanogenMod/"
            review="review.cyanogenmod.com" />
 
-  <remote  name="roberj13"
-           fetch="https://github.com/roberj13/" />
+  <remote  name="bcf"
+           fetch="https://github.com/BrewCrewFoo/" />
 
   <default revision="refs/tags/android-4.2_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="build" remote="roberj13" revision="jb-mr1" >
+  <project path="build" name="build" remote="bcf" revision="jb-mr1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -45,7 +45,7 @@
   <project path="device/sample" name="device/sample" />
   <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device" />
-  <project path="device/samsung/toro" name="device_samsung_toro" remote="roberj13" revision="jb-mr1" />
+  <project path="device/samsung/toro" name="device_samsung_toro" remote="bcf" revision="jb-mr1" />
   <project path="device/samsung/toroplus" name="device/samsung/toroplus" groups="device" />
   <project path="device/samsung/tuna" name="device/samsung/tuna" groups="device" />
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
@@ -66,7 +66,6 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
-  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="jellybean" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
   <project path="external/chromium" name="platform/external/chromium" />
@@ -209,7 +208,7 @@
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" />
-  <project path="frameworks/base" name="frameworks_base" remote="roberj13" revision="jb-mr1" />
+  <project path="frameworks/base" name="frameworks_base" remote="bcf" revision="jb-mr1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" />
@@ -248,7 +247,7 @@
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
-  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="roberj13" revision="jb-mr1" />
+  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="bcf" revision="jb-mr1" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
@@ -272,8 +271,9 @@
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
+  <project path="packages/apps/ROMControl" name="packages_apps_ROMControl" remote="bcf" revision="jb-mr1" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="roberj13" revision="jb-mr1" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="bcf" revision="jb-mr1" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -333,8 +333,8 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="system_core" remote="roberj13" revision="jb-mr1" />
-  <project path="system/extras" name="system_extras" remote="roberj13" revision="jb-mr1" />
+  <project path="system/core" name="system_core" remote="bcf" revision="jb-mr1" />
+  <project path="system/extras" name="system_extras" remote="bcf" revision="jb-mr1" />
   <project path="system/su" name="android_system_su" remote="cm" revision="jellybean" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
@@ -343,12 +343,12 @@
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
 
-  <project path="vendor/aokp" name="vendor_aokp" remote="roberj13" revision="jb-mr1" />
+  <project path="vendor/aokp" name="vendor_aokp" remote="bcf" revision="jb-mr1" />
   <project path="vendor/aokp/bot" name="pseudo_buildbot" remote="aokp" revision="jb" />
-  <project path="vendor/samsung" name="vendor_samsung" remote="roberj13" revision="jb-mr1" />
+  <project path="vendor/samsung" name="vendor_samsung" remote="bcf" revision="jb-mr1" />
   <project path="vendor/asus" name="vendor_asus" remote="aokp" revision="jb" />
 
   <project path="packages/wallpapers/SwagPapers" name="packages_wallpapers_SwagPapers_v2" remote="aokp" revision="jb" />
 
-  <project path="platform_manifest" name="platform_manifest" remote="roberj13" revision="jb-mr1" />
+  <project path="platform_manifest" name="platform_manifest" remote="bcf" revision="jb-mr1" />
 </manifest>
